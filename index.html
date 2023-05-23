@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Weather App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+            <section class="input">
+                <p class="info"></p>
+                <input type="text" placeholder="Nome da cidade" spellcheck="false" required>
+                <div class="separador"></div>
+                <button>Utilizar localização</button>
+            </section>
+            <section class="clima">
+                <img src="" alt="Ícone de Clima">
+                <div class="temp">
+                    <span class="numero">_</span>
+                    <span class="graus">°</span>C
+                </div>
+                <div class="weather">_ _</div>
+                <div class="local">
+                    <i class="bx bx-map"></i>
+                    <span>_, _</span>
+                </div>
+                <div class="bottom-detalhes">
+                    <div class="coluna sensacao">
+                        <i class="bx bxs-thermometer"></i>
+                        <div class="detalhes">
+                        <div class="temp">
+                            <span class="numero-2">_</span>
+                            <span class="graus">°</span>C
+                        </div>
+                            <p>Sensação Térmica</p>
+                        </div>
+                    </div>
+                    <div class="coluna umidade">
+                        <i class="bx bxs-droplet-half"></i>
+                    <div class="detalhes">
+                        <span>_</span>
+                        <p>Umidade</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+

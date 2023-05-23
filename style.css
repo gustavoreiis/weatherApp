@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4169E1;
+
+}
+
+.wrapper {
+    background: white;
+    width: 400px;
+    border-radius: 7px;
+}
+
+.wrapper header {
+    color: #4169E1;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 16px 15px;
+    border-bottom: 1px solid #bfbfbf;
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    cursor: pointer;
+    font-size: 0px;
+    margin-right: 8px; 
+}
+
+.wrapper.active header i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.wrapper .input{
+    margin: 20px 25px 30px;
+}
+
+.wrapper.active .input {
+    display: none;
+}
+
+.input .info {
+    display: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.info.error{
+    display: block;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+.info.pending{
+    display: block;
+    color: #0c5460;
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+}
+
+.input :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.input input {
+    border: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+.input button {
+    color: #fff;
+    background-color: #4169E1;
+    cursor: pointer;   
+}
+
+.input input:is(:focus, :valid) {
+    border: 2px solid #4169E1;
+}
+ 
+.input .separador {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separador::before {
+    content: "ou";
+    background: #fff;
+    padding: 0 15px;
+    color: #ccc;
+}
+
+.wrapper .clima {
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.active .clima {
+    display: flex;
+}
+
+.clima img {
+    max-width: 125px;
+}
+
+.clima .temp {
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;;
+}
+
+.clima .temp .numero {
+    font-weight: 600;
+}
+
+.clima .temp .graus {
+    font-size: 40px;
+    margin: 10px 5px 0 0;
+    display: block;
+}
+
+.clima .weather  {
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+
+.clima .local {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.local i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.clima .bottom-detalhes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid  #bfbfbf
+}
+
+.bottom-detalhes .coluna {
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna i {
+    color: #4169E1;
+    font-size: 40px;
+}
+
+.coluna.umidade {
+    border-left: 1px solid #bfbfbf;
+}
+
+.detalhes .temp, .umidade span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.detalhes .temp .graus {
+    margin: 0;
+    font-size: 17px;
+    padding: 0 2px 0 1px;;
+}
+
+.detalhes p {
+    font-size: 14px;
+    margin-top: -6px;
+}
